@@ -18,3 +18,14 @@
 .footer a:hover {
     color: var(--color-primary, #2f80ff);
 }
+
+@media (max-width: 600px) {
+    .footer__inner {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer a {
+        margin: 0 20px 0 0;
+    }
+}

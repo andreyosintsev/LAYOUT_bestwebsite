@@ -20,3 +20,15 @@
     color: var(--color-service-price, #d9e1e8);
     font-size: 12px;
 }
+
+@media (max-width: 900px) {
+    .cards--services {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .cards--services {
+        grid-template-columns: 1fr;
+    }
+}

@@ -25,3 +25,9 @@
 .card--project:nth-child(3) .card__image {
     background: linear-gradient(var(--color-project-three-start, #42536c), var(--color-project-three-end, #0b1d30));
 }
+
+@media (max-width: 600px) {
+    .cards--projects {
+        grid-template-columns: 1fr;
+    }
+}

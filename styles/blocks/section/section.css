@@ -32,3 +32,9 @@
     font-size: 11px;
     text-align: center;
 }
+
+@media (max-width: 600px) {
+    .section__link {
+        display: none;
+    }
+}

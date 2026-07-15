@@ -39,3 +39,9 @@
     color: var(--color-review-role, #718399);
     font-size: 10px;
 }
+
+@media (max-width: 600px) {
+    .cards--reviews {
+        grid-template-columns: 1fr;
+    }
+}

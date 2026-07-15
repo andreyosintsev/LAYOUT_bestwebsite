@@ -1,15 +1,25 @@
 .hero {
-    min-height: 548px;
+    width: min(1300px, 100%);
+    min-height: 760px;
+    margin: 0 auto;
     padding-top: 76px;
     background:
         linear-gradient(90deg, var(--color-hero-start, rgba(0, 8, 15, 0.96)) 0, var(--color-hero-middle, rgba(0, 8, 15, 0.65)) 41%, var(--color-hero-end, rgba(0, 8, 15, 0.04)) 75%),
         url('../../../assets/hero.png') center / cover no-repeat;
 }
 
+.hero + .container {
+    position: relative;
+    z-index: 1;
+    margin-top: -260px;
+}
+
 .hero__inner {
     display: flex;
     align-items: center;
+    width: 100%;
     min-height: 472px;
+    padding-inline: max(20px, calc((100% - 1180px) / 2));
 }
 
 .hero__content {
@@ -46,4 +56,53 @@
     display: flex;
     gap: 18px;
     margin-top: 28px;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        min-height: 720px;
+        background-position: 62% center;
+    }
+
+    .hero + .container {
+        margin-top: -300px;
+    }
+
+    .hero__title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        width: 100%;
+        min-height: 620px;
+        background-position: 68% center;
+    }
+
+    .hero + .container {
+        margin-top: 0;
+    }
+
+    .hero__inner {
+        align-items: flex-end;
+        padding-bottom: 40px;
+        padding-inline: 14px;
+    }
+
+    .hero__content {
+        padding: 22px;
+        border-radius: 12px;
+        background: var(--color-mobile-hero-bg, rgba(2, 13, 23, 0.75));
+        backdrop-filter: blur(4px);
+    }
+
+    .hero__title {
+        font-size: 34px;
+    }
+
+    .hero__actions {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
 }

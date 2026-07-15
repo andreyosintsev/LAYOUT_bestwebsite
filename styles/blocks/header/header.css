@@ -45,3 +45,41 @@
 .nav__link:hover {
     color: var(--color-primary, #2f80ff);
 }
+
+@media (max-width: 900px) {
+    .header__socials,
+    .header__button {
+        display: none;
+    }
+
+    .header__burger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: auto;
+        border: 0;
+        background: none;
+    }
+
+    .header__burger span {
+        width: 25px;
+        height: 2px;
+        background: var(--color-white, #fff);
+    }
+
+    .nav {
+        position: fixed;
+        top: 76px;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 25px 20px;
+        background: var(--color-mobile-nav-bg, #061523);
+    }
+
+    .nav--open {
+        display: flex;
+    }
+}
