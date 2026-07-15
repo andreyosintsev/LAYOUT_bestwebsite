@@ -1,0 +1,22 @@
+.cards--services {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.service {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 12px;
+    padding: 16px 18px;
+}
+
+.service__icon {
+    color: var(--color-primary, #2f80ff);
+    font-size: 32px;
+}
+
+.service__price {
+    display: block;
+    margin-top: 8px;
+    color: var(--color-service-price, #d9e1e8);
+    font-size: 12px;
+}

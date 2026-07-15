@@ -1,0 +1,140 @@
+@media (max-width: 900px) {
+    .header__socials,
+    .header__button {
+        display: none;
+    }
+
+    .header__burger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: auto;
+        border: 0;
+        background: none;
+    }
+
+    .header__burger span {
+        width: 25px;
+        height: 2px;
+        background: var(--color-white, #fff);
+    }
+
+    .nav {
+        position: fixed;
+        top: 76px;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 25px 20px;
+        background: var(--color-mobile-nav-bg, #061523);
+    }
+
+    .nav--open {
+        display: flex;
+    }
+
+    .hero {
+        background-position: 62% center;
+    }
+
+    .hero__title {
+        font-size: 40px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cards--services {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .map {
+        grid-column: 1 / -1;
+    }
+
+    .advantages {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: min(100% - 28px, 1180px);
+    }
+
+    .hero {
+        min-height: 620px;
+        background-position: 68% center;
+    }
+
+    .hero__inner {
+        align-items: flex-end;
+        padding-bottom: 40px;
+    }
+
+    .hero__content {
+        padding: 22px;
+        border-radius: 12px;
+        background: var(--color-mobile-hero-bg, rgba(2, 13, 23, 0.75));
+        backdrop-filter: blur(4px);
+    }
+
+    .hero__title {
+        font-size: 34px;
+    }
+
+    .hero__actions {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .advantages,
+    .skills__grid,
+    .cards--projects,
+    .cards--services,
+    .cards--reviews,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    .advantages {
+        gap: 14px;
+    }
+
+    .section__link {
+        display: none;
+    }
+
+    .content-grid {
+        gap: 10px;
+    }
+
+    .map {
+        grid-column: auto;
+    }
+
+    .form__row {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__inner {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer a {
+        margin: 0 20px 0 0;
+    }
+}

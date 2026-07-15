@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(circle at 55% 25%, var(--color-page-glow, #0a2232) 0, var(--color-transparent, transparent) 29%), var(--color-bg, #020d17);
+    color: var(--color-text, #f4f7fb);
+    font-family: Inter, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.page {
+    min-width: 320px;
+}
+
+.container {
+    width: min(1180px, calc(100% - 40px));
+    margin: auto;
+}

@@ -1,0 +1,30 @@
+.cards {
+    display: grid;
+    gap: 18px;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card__body {
+    padding: 14px 18px 16px;
+}
+
+.card__title {
+    margin: 0 0 7px;
+    font-size: 15px;
+}
+
+.card__text {
+    margin: 0;
+    color: var(--color-muted, #9daaba);
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+.card__link {
+    color: var(--color-primary, #2f80ff);
+    font-size: 12px;
+    text-decoration: none;
+}

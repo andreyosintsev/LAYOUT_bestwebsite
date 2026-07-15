@@ -1,0 +1,68 @@
+.contact {
+    display: grid;
+    grid-template-columns: 250px 1fr 410px;
+    gap: 38px;
+    margin-top: 26px;
+    padding: 14px;
+}
+
+.contact__info p {
+    margin: 9px 0;
+    color: var(--color-contact-text, #d1d9e2);
+    font-size: 12px;
+}
+
+.form__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--color-line, #1b3448);
+    border-radius: 6px;
+    outline: none;
+    background: var(--color-input-bg, #0a1a28);
+    color: var(--color-white, #fff);
+    font: 12px Inter, sans-serif;
+}
+
+.form__input:focus {
+    border-color: var(--color-primary, #2f80ff);
+}
+
+.form__textarea {
+    height: 70px;
+    margin: 8px 0;
+    resize: none;
+}
+
+.map {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    min-height: 140px;
+    padding: 14px;
+    border: 1px solid var(--color-line, #1b3448);
+    border-radius: 8px;
+    background:
+        linear-gradient(var(--color-map-start, rgba(6, 28, 47, 0.65)), var(--color-map-end, rgba(6, 28, 47, 0.92))),
+        repeating-linear-gradient(35deg, var(--color-transparent, transparent) 0 25px, var(--color-map-road, #1d3a51) 26px 28px);
+}
+
+.map__pin {
+    position: absolute;
+    top: 44px;
+    left: 52%;
+    color: var(--color-white, #fff);
+    font-size: 25px;
+    text-shadow: 0 0 0 8px var(--color-primary, #2f80ff);
+}
+
+.map small {
+    display: block;
+    margin-top: 5px;
+    color: var(--color-map-text, #8799aa);
+}

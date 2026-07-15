@@ -1,0 +1,20 @@
+.advantages {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    padding: 24px 0;
+}
+
+.advantages__item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--color-advantages-text, #c1cad4);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.advantages__icon {
+    color: var(--color-primary, #2f80ff);
+    font-size: 30px;
+}

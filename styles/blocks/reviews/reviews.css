@@ -1,0 +1,41 @@
+.cards--reviews {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.review {
+    padding: 14px;
+}
+
+.review__top {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.review__avatar {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--color-review-avatar, #24435e);
+}
+
+.review__quote {
+    min-height: 68px;
+    color: var(--color-review-text, #aab8c6);
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.review__name {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.review__role {
+    display: block;
+    margin-top: 4px;
+    color: var(--color-review-role, #718399);
+    font-size: 10px;
+}

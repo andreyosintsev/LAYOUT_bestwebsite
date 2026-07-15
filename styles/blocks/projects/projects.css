@@ -1,0 +1,27 @@
+.cards--projects {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card__image {
+    position: relative;
+    height: 135px;
+    background: linear-gradient(135deg, var(--color-project-one-start, #e8edf2), var(--color-project-one-end, #8696a6));
+}
+
+.card__image::after {
+    position: absolute;
+    inset: 16px;
+    background:
+        repeating-linear-gradient(90deg, var(--color-project-grid-strong, rgba(8, 23, 37, 0.85)) 0 2px, var(--color-transparent, transparent) 2px 18px),
+        repeating-linear-gradient(0deg, var(--color-project-grid-soft, rgba(8, 23, 37, 0.65)) 0 2px, var(--color-transparent, transparent) 2px 17px);
+    content: '';
+    opacity: 0.55;
+}
+
+.card--project:nth-child(2) .card__image {
+    background: linear-gradient(120deg, var(--color-project-two-start, #f8f4ee) 50%, var(--color-project-two-end, #b68a6e));
+}
+
+.card--project:nth-child(3) .card__image {
+    background: linear-gradient(var(--color-project-three-start, #42536c), var(--color-project-three-end, #0b1d30));
+}

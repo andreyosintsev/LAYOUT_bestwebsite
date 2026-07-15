@@ -1,0 +1,27 @@
+.articles {
+    display: grid;
+    gap: 1px;
+}
+
+.article {
+    display: grid;
+    grid-template-columns: 76px 1fr;
+    gap: 13px;
+    padding: 6px;
+}
+
+.article__image {
+    border-radius: 6px;
+    background: linear-gradient(135deg, var(--color-article-start, #364c60), var(--color-article-end, #aa7942));
+}
+
+.article__title {
+    margin: 4px 0 6px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.article__date {
+    color: var(--color-article-date, #73869a);
+    font-size: 11px;
+}

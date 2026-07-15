@@ -1,0 +1,64 @@
+:root {
+    --color-bg: #020d17;
+    --color-panel: #081725;
+    --color-line: #1b3448;
+    --color-primary: #2f80ff;
+    --color-text: #f4f7fb;
+    --color-muted: #9daaba;
+    --color-white: #fff;
+    --color-transparent: transparent;
+
+    --color-page-glow: #0a2232;
+    --color-primary-start: #2475ff;
+    --color-primary-end: #2466df;
+    --color-primary-shadow: rgba(47, 128, 255, 0.22);
+    --color-bg-ghost: rgba(2, 13, 23, 0.45);
+    --color-panel-start: rgba(9, 27, 41, 0.96);
+    --color-panel-end: rgba(5, 19, 31, 0.82);
+    --color-accent-light: #6aa9ff;
+    --color-note: #77889a;
+    --color-tag-bg: #14283a;
+    --color-tag-text: #bdc9d4;
+
+    --color-header-line: rgba(255, 255, 255, 0.08);
+    --color-header-bg: rgba(2, 13, 23, 0.76);
+    --color-nav-text: #eef2f6;
+    --color-mobile-nav-bg: #061523;
+    --color-mobile-hero-bg: rgba(2, 13, 23, 0.75);
+
+    --color-hero-start: rgba(0, 8, 15, 0.96);
+    --color-hero-middle: rgba(0, 8, 15, 0.65);
+    --color-hero-end: rgba(0, 8, 15, 0.04);
+    --color-hero-text: #bec7d1;
+    --color-advantages-text: #c1cad4;
+
+    --color-about-text: #b1bdc9;
+    --color-skill-bg: #0d1e2e;
+    --color-skill-icon-bg: #173b5d;
+    --color-skill-icon: #53a1ff;
+
+    --color-project-one-start: #e8edf2;
+    --color-project-one-end: #8696a6;
+    --color-project-grid-strong: rgba(8, 23, 37, 0.85);
+    --color-project-grid-soft: rgba(8, 23, 37, 0.65);
+    --color-project-two-start: #f8f4ee;
+    --color-project-two-end: #b68a6e;
+    --color-project-three-start: #42536c;
+    --color-project-three-end: #0b1d30;
+
+    --color-service-price: #d9e1e8;
+    --color-review-avatar: #24435e;
+    --color-review-text: #aab8c6;
+    --color-review-role: #718399;
+    --color-article-start: #364c60;
+    --color-article-end: #aa7942;
+    --color-article-date: #73869a;
+
+    --color-contact-text: #d1d9e2;
+    --color-input-bg: #0a1a28;
+    --color-map-start: rgba(6, 28, 47, 0.65);
+    --color-map-end: rgba(6, 28, 47, 0.92);
+    --color-map-road: #1d3a51;
+    --color-map-text: #8799aa;
+    --color-footer-text: #708194;
+}
